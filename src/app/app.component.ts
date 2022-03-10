@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { assetUrl } from 'src/single-spa/asset-url';
 
 @Component({
-  selector: 'app-root',
+  selector: 'continents-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'mf-continents';
+  title = 'continents';
+  // Works great with single-spa
+  europeImage = assetUrl('europe.jpeg');
+  africaImage = assetUrl('africa.jpeg');
+  americaImage = assetUrl('america.jpg');
+
+  ngOnInit() {}
 }
