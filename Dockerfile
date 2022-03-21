@@ -8,7 +8,7 @@ RUN yarn install
 
 COPY . .
 
-RUN yarn build --deploy-url /src/assets
+RUN yarn build --deploy-url /
 
 FROM nginx:latest
 
