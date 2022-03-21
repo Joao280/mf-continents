@@ -8,7 +8,7 @@ RUN yarn install
 
 COPY . .
 
-RUN yarn build --deploy-url /
+RUN yarn build --deploy-url /mf-continents
 
 FROM nginx:latest
 
